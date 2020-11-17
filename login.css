@@ -1,8 +1,12 @@
 .container{
-    width: 30%;
-    margin-top: 9%;
-    box-shadow: 0 3px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(0,0,0, 0.5); 
     padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    background: white;
+    /*meletakkan form ke tengah*/
+    margin: 80px auto;
+    padding: 50px 40px;
 }
 
 button {
