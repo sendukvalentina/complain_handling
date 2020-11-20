@@ -3,9 +3,14 @@
     border-radius: 10px;
     width: 800px;
     background: white;
-    /*meletakkan form ke tengah*/
-    margin: 100px auto;
+    margin: auto;
+    margin-bottom: 60px;
     padding: 35px 30px;
+}
+
+.info{
+    width: 800px;
+    margin: auto;
 }
 
 body {
