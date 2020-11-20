@@ -11,10 +11,77 @@
 
     <title>Registrasi Akun CS</title>
   </head>
+
   <body>
-    <div class="container">
-        <h3 class="alert alert-primary text-center mt-3">Registrasi Akun Customer Service</h3>
+        <!-- Topbar -->
+    <nav class="navbar navbar-expand-lg navbar-light topbar mb-4 shadow fixed-top">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="navbar-brand" href=""><img alt="logo" src="images/bri.png" width="45px" height="35px" ></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Beranda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Customer Service</a>
+            </li>
+        </ul>
+    </div>
+
+        <ul class="navbar-nav">
+        <li class="nav-item dropdown no-arrow">
+            <a class="dropdown-toggle" href="" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rating</a>
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">
+                        <!-- <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                        Rating Customer
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <!-- <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                        Rating CS
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <!-- <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                        Rekapitulasi Rating
+                    </a>
+                </div>
+          </li>
+          </ul>
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <!-- Nav Item - User Information -->
+                <li class="nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="img-profile rounded-circle" src="images/user.png" width="42px" height="40px">
+                    </a>
+               <!-- Dropdown - User Information -->
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Akun Saya
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Logout
+                        </a>
+                    </div>
+               </li>
+        </ul>
+    </nav>
+    <!-- End of Topbar -->
     
+    <!-- <div class="info">
+        <img alt="logo" src="images/validation.png" width="45px" height="45px"/>
+        Hai SPV-#ID, Silakan membuat akun CS baru disini!
+    </div> -->
+
+    <div class="container">
+        <h3 class="text-center mt-3">Registrasi Akun Customer Service</h3>
         <form>
             <div class="form-group">
                 <label>Nama Lengkap</label>
@@ -46,13 +113,19 @@
                 <input type="file" name="foto_palsu" class="form-control-file"> 
             </div>
             
-                <a href="login.html" type="submit" class="btn btn-primary" >Buat Akun</a>
-            
-            
-            
+            <button type="submit" class="btn btn-primary">Buat Akun</button>
+            <button type="submit" class="btn btn-danger">Batal</button>
 
         </form>
     </div>
+    <!-- footer -->
+  <footer class="page-footer font-small blue">
+    <!-- Copyright -->
+    <div class="footer-copyright text-white text-center py-5">
+      © 2020 Copyright: <a class="bootstrap-link" href="" target="_blank">UGM-FE-06</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

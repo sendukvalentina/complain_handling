@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+    font-family: 'Montserrat', 'sans-serif';
+}
+  .nav-link {
+      color: black;
+  }
+  .nav-link:hover {
+      background-color: mediumblue;
+      color: white;
+  }
+  .navbar-ml {
+      margin-left: 50px;
+  }
+  #search {
+      width: 300px;
+      height: 40px;
+      padding: 15px;
+      background-color: aqua; 
+      border: 1px solid transparent;
+      border-radius: 15px;
+  }
+  #search:focus {
+      border: 1px solid blue;
+  }
