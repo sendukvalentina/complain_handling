@@ -28,3 +28,14 @@ button {
 .navbar {
    background: #e5eef7; 
 }
+
+.nav-link {
+      color: black;
+  }
+  .nav-link:hover {
+      background-color: mediumblue;
+      color: white;
+  }
+  .nav-link:active {
+      background-color: tomato;
+  }
