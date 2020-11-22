@@ -1,63 +1,3 @@
-<style>
-    .male {
-  box-sizing: border-box;
-  width: 285px;
-  height: 285px;
-  overflow: visible;
-  box-shadow: 7px 4px 2px 0px rgba(0, 0, 0, 0.25), 0px 2px 4px 0px rgba(0,0,0,0.25);
-  background-image: url(/* male.png */);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 55px;
-  border: 6px solid #cc3838;
-}
-.profile {
-  box-sizing: border-box;
-  width: 2000x;
-  height: 1200px;
-  overflow: hidden;
-  background-color: #E0E8FF;
-  border: 1px solid #222222;
-}
-.logo2 {
-  width: 107px;
-  height: 95px;
-  overflow: visible;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.frame {
-  width: 520px;
-  height: 300px;
-  overflow: visible;
-  box-shadow: 6px 4px 2px 0px rgba(72, 146, 199, 0.8);
-  background-color: #ffffff;
-  border-radius: 27px;
-}
-
-.frame1 {
-  width: 320px;
-  height: 300px;
-  overflow: visible;
-  box-shadow: 6px 4px 2px 0px rgba(72, 146, 199, 0.8);
-  background-color: #ffffff;
-  border-radius: 27px;
-  text-align: justify;
-}
-
-.frame2 {
-  width: 900px;
-  height: 300px;
-  overflow: visible;
-  box-shadow: 6px 4px 2px 0px rgba(72, 146, 199, 0.8);
-  background-color: #ffffff;
-  border-radius: 27px;
-}
-</style>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -110,12 +50,10 @@
                <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">
-                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Akun Saya
                         </a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Logout
                         </a>
                     </div>
@@ -123,13 +61,12 @@
         </ul>
     </nav>
     <!-- End of Topbar -->
-
     <div class="container">
         <div class="row" style="margin-top: 100px;">
             <div class="col col-sm-8">
                 <p class="text-justify">
-                    <img src="images/work.png" alt="" style="width: 50px; height: 50px;">
-                    This is ticket details for Ticket-ID : 112233
+                    <img src="images/ticket.png" alt="" style="width: 50px; height: 50px;">
+                    Berikut detail untuk ID-Tiket : 112233
                 </p>
             </div>
             <div class="col col-sm-4">
@@ -142,27 +79,23 @@
     </div>
     <!-- end of content -->
 
-            <div class="row">
-                <div class="col-4">
-                    <div class="frame1">
-                        <br>
-                        <h6>Ticket ID   : 112234</h6>
-                        <h6>Date   : 20/11/2020,08:45</h6>
-                        <br>
-                        <h6>ID Number   : 3334445556789</h6>
-                        <h6>Customer ID/ Name   : 00002/Apip</h6>
-                        <h6>Customer E-mail   : Apiip@gmail.com</h6>
-                        <h6>Account Number   : 5656565656</h6>
-                        <h6>CS ID/ Name   : 998877/Mul</h6>
-                    </div>
+    <div class="container" style="margin-bottom: 60px;">
+            <div class="row" style="margin-bottom:5px;">
+                <div class="col col-sm-4">
+                        <h6>ID Tiket    : 112234</h6>
+                        <h6>Waktu dan Tanggal   : 20/11/2020,08:45</h6>
+                        <h6>No.KTP   : 3334445556789</h6>
+                        <h6>ID Customer/Nama    : 00002/Apip</h6>
+                        <h6>E-mail Customer : Apiip@gmail.com</h6>
+                        <h6>No.Rek  : 5656565656</h6>
+                        <h6>CS ID/Nama : 998877/Mul</h6>
                   </div>
-                  <div class="col-3">
-                    <div class="frame">
-                        <br>
+                  <div class="col col-sm-3">
+                    <div class="">
                         <table class="table">
                             <tr>
                                 <td>
-                                    <b>Title</b>
+                                    <b>Judul</b>
                                 </td>
                                 <td>:</td>
                                 <td>
@@ -171,20 +104,20 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Complain Category</b>
+                                    <b>Kategori Komplain</b>
                                 </td>
                                 <td>:</td>
                                 <td>
                                     <select>
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
+                                        <option>Isu Layanan Perbankan</option>
+                                        <option>Isu Mobile Banking</option>
+                                        <option>Isu Internet Banking</option>
                                     </select>
                                 <td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Message</b>
+                                    <b>Pesan</b>
                                 </td>
                                 <td>:</td>
                                 <td>
@@ -193,7 +126,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Attachment Files (Photo)</b>
+                                    <b>Unggah File (Foto)</b>
                                 </td>
                                 <td>:</td>
                                 <td>
@@ -201,15 +134,13 @@
                                 <td>
                             </tr>
                         </table>
-            
                     </div>
                   </div>
               </div>
-
+              
               <div class="row">
-                  <div class="col-12">
-                      <br>
-                      <h5>Reply the customer's message or see the <button type="button" class="btn btn-primary">Customer History</button> </h5> 
+                  <div class="col-8">
+                      <h6>Silakan menjawab pesan customer atau lihat <button type="button" class="btn btn-primary">Riwayat Customer</button></h6>
                   </div>
               </div>
 
@@ -218,10 +149,9 @@
                       <div class="frame2">
                         <div class="row">
                           </div>
-                          <br>
                           <div class="row">
                             <div class="col-sm-2">
-                                <h5>Message :</h5>
+                                <h6>Pesan :</h6>
                             </div>
                             <div class="col-sm-8">
                                 <div class="form-group">
@@ -231,19 +161,19 @@
                           </div>
                           <div class="row">
                             <div class="col-sm-2">
-                                <h5>Status :</h5>
+                                <h6>Status :</h6>
                             </div>
                             <div class="col-sm-4">
                                 <select class="form-control" id="sel1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
+                                    <option>In Review</option>
+                                    <option>On Progress</option>
+                                    <option>Waiting for Verification</option>
+                                    <option>Closed</option>
                                   </select>
                             </div>
                             <div class="col-sm-6">
-                                <button type="button" class="btn btn-success">Save</button>
-                                <button type="button" class="btn btn-danger">Cancel</button>
+                                <button type="button" class="btn btn-success">Simpan</button>
+                                <button type="button" class="btn btn-danger">Batal</button>
                             </div>
                           </div>
                     
@@ -251,6 +181,7 @@
                   </div>
               </div>
           </div>
+    </div>
     </div>
     
     <!-- footer -->
