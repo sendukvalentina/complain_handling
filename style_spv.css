@@ -1,14 +1,12 @@
-.page-footer{
-    background: #13477e;
-}
-
 .navbar {
    background: #e5eef7; 
 }
 
 body {
     background-color: lightblue;
+    font-family: 'Montserrat', 'sans-serif';
 }
+
   .nav-link {
       color: black;
   }
@@ -20,11 +18,27 @@ body {
       background-color: tomato;
   }
 
+  .navbar-ml{
+      margin-left: 50px;
+  }
+
   #search {
       width: 300px;
       height: 40px;
       padding: 15px;
-      background-color: #c4c4c4;
-      border: 1px transparent;
+      background-color: aqua;
+      border: 1px solid transparent;
       border-radius: 15px;
   }
+
+      #search:focus {
+      border: 1px solid blue;
+  }
+
+  /* styling untuk register_cs_by_spv.html */
+  .info{
+    width: 800px;
+    margin: auto;
+}
+
+/* end of styling register cs */
