@@ -1,125 +1,125 @@
-<style>
-    .male {
-  box-sizing: border-box;
-  width: 285px;
-  height: 285px;
-  overflow: visible;
-  box-shadow: 7px 4px 2px 0px rgba(0, 0, 0, 0.25), 0px 2px 4px 0px rgba(0,0,0,0.25);
-  background-image: url(/* male.png */);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 55px;
-  border: 6px solid #cc3838;
-}
-.profile {
-  box-sizing: border-box;
-  width: 2000x;
-  height: 1000px;
-  overflow: hidden;
-  background-color: #E0E8FF;
-  border: 1px solid #222222;
-}
-.logo2 {
-  width: 107px;
-  height: 95px;
-  overflow: visible;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.frame {
-  width: 520px;
-  height: 245px;
-  overflow: visible;
-  box-shadow: 6px 4px 2px 0px rgba(72, 146, 199, 0.8);
-  background-color: #ffffff;
-  border-radius: 27px;
-}
-</style>
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-</head>
-<body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style_cs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sansita+Swashed&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
 
+    <title>Profil</title>
+  </head>
 
-    <div class="profile">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    ,
-                    <br>
-                    <br>
-                    <br>
-                  </div>
+  <body>
+        <!-- Topbar -->
+    <nav class="navbar navbar-expand-lg navbar-light topbar mb-4 shadow fixed-top">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="navbar-brand" href=""><img alt="logo" src="images/bri.png" width="45px" height="35px" ></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Validasi User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Rating</a>
+            </li>
+        </ul>
+    </div>
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <!-- Nav Item - User Information -->
+                <li class="nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="img-profile rounded-circle" src="images/user.png" width="42px" height="40px">
+                    </a>
+               <!-- Dropdown - User Information -->
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Akun Saya
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Logout
+                        </a>
+                    </div>
+               </li>
+        </ul>
+    </nav>
+    <!-- End of Topbar -->
+    <div class="container">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col col-sm-8">
+                <p class="text-justify">
+                    <img src="images/user-info.png" alt="" style="width: 50px; height: 50px;">
+                    Hello, #ID-CS! This is your full profile.
+                </p>
+            </div>
+            <div class="col col-sm-4">
+                <div class="float-right">
+                    <img src="images/search.png" alt="" style="width: 30px; height: 30px;">
+                    <input type="text" id="search" placeholder="Cari tiket...">
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-
-              <div class="col-4">
-                <img src="img/logo1.png" alt="" class="logo2">
-              </div>
-              <div class="col-1">
-                <a href="" type="submit" class="btn btn-primary">Home</a>
-              </div>
-              <div class="col-1.5">
-                <a href="" type="submit" class="btn btn-primary">Validation</a>
-              </div>
-              <div class="col-2">
-                <a href="" type="submit" class="btn btn-primary">Rating</a>
-              </div>
-              <div class="col-3">
-                <img src="img/logo2.png" width="50" height="50">
-                <a href="login.html" type="submit" class="btn btn-primary">Logout</a>
-              </div>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="row">
-                <div class="col-1">
-                    <img src="img/user-info.png" width="50" height="50">
-                  </div>
-                  <div class="col-3">
-                    <h5>Hello, #ID-CS</h5>
-                    <h5>This is your full profile.</h5>
-                  </div>
-            </div>
-
-            <br>
-            <br>
-            <br>
+    </div>
+    <!-- end of content -->
 
             <div class="row">
                 <div class="col-4">
-                    <img src="img/logo2.png" alt="male" class="male">
+                    <img src="images/logo2.png" alt="male" class="male">
                   </div>
                   <div class="col-3">
                     <div class="frame">
                         <br>
-                        
                         <h3>CS ID : </h3>
                         <h3>E-mail CS :</h3>
                         <h3>E-mail :</h3>
                         <h3>Real Name :</h3>
                         <h3>Alias Name :</h3>
                     </div>
-                  </div>
-              </div>
-          </div>
-    </div>
-    
-        
-    
-</body>
+                </div>
+            </div>
+
+     <!-- footer -->
+    <footer class="page-footer font-small blue bg-dark">
+        <!-- Copyright -->
+        <div class="footer-copyright text-white text-center py-5">
+            © 2020 Copyright: Bank BRI
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+  </body>
 </html>

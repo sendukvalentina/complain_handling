@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="rating_list.css">
+    <link rel="stylesheet" type="text/css" href="style_cs.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sansita+Swashed&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css"
@@ -20,34 +20,49 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand navbar-ml" href="#">
-                <img src="images/bri.png" alt="" style="width: auto; height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg navbar-light topbar mb-4 shadow fixed-top">
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">User Validation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="rating_list.html">Rating</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <a href="#">
-            <img class="mr-5" src="images/user.png" style="width: 50px; height: 50px;" alt="">
-        </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="navbar-brand" href=""><img alt="logo" src="images/bri.png" width="45px" height="35px" ></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Validasi User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Rating</a>
+            </li>
+        </ul>
+    </div>
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <!-- Nav Item - User Information -->
+                <li class="nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="img-profile rounded-circle" src="images/user.png" width="42px" height="40px">
+                    </a>
+               <!-- Dropdown - User Information -->
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Akun Saya
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Logout
+                        </a>
+                    </div>
+               </li>
+        </ul>
     </nav>
+    <!-- End of Topbar -->
 
     <!-- Content -->
     <div class="container">
@@ -59,8 +74,10 @@
                 </p>
             </div>
             <div class="col col-sm-4">
+                <div class="float-right">
                     <img src="images/search.png" alt="" style="width: 30px; height: 30px;">
                     <input type="text" id="search" placeholder="Search for a ticket...">
+                </div>
                 </div>
             </div>
         </div>
@@ -159,15 +176,15 @@
             </tbody>
         </table>
     </div>
-    <div class="container py-3">
+    <div class="container py-3" style="margin-bottom: 60px;">
         <button type="button" class="btn btn-primary" style="float: right;">Next</button>
     </div>
     <!-- end of form -->
 
     <!-- footer -->
-    <footer class="page-footer font-small blue bg-dark mt-5">
+    <footer class="page-footer font-small blue bg-dark">
         <!-- Copyright -->
-        <div class="footer-copyright text-white text-center py-3">
+        <div class="footer-copyright text-white text-center py-5">
             © 2020 Copyright: Bank BRI
         </div>
         <!-- Copyright -->
