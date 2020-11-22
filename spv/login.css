@@ -1,0 +1,17 @@
+.container{
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.5); 
+    border-radius: 15px;
+    width: 450px;
+    background: white;
+    /*meletakkan form ke tengah*/
+    margin: 80px auto;
+    padding: 50px 40px;
+}
+
+body {
+    background-color: #84acd8;
+}
+
+button {
+    width: 100%;
+}
