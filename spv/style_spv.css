@@ -42,3 +42,46 @@ body {
 }
 
 /* end of styling register cs */
+
+/* STYLING untuk profile_cs.html */
+
+      .male {
+  box-sizing: border-box;
+  width: 285px;
+  height: 285px;
+  overflow: visible;
+  box-shadow: 7px 4px 2px 0px rgba(0, 0, 0, 0.25), 0px 2px 4px 0px rgba(0,0,0,0.25);
+  background-image: url(/* male.png */);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 55px;
+  border: 6px solid #cc3838;
+}
+.profile {
+  box-sizing: border-box;
+  width: 2000x;
+  height: 1000px;
+  overflow: hidden;
+  background-color: #E0E8FF;
+  border: 1px solid #222222;
+}
+.logo2 {
+  width: 107px;
+  height: 95px;
+  overflow: visible;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.frame {
+  width: 520px;
+  height: 245px;
+  overflow: visible;
+  box-shadow: 6px 4px 2px 0px rgba(72, 146, 199, 0.8);
+  background-color: #ffffff;
+  border-radius: 27px;
+}
+
+/* end of STYLING untuk profile_cs.html */

@@ -5,21 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style_cs.css">
+    <link rel="stylesheet" type="text/css" href="style_spv.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sansita+Swashed&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
 
-    <title>Riwayat Customer</title>
+    <title>Home</title>
   </head>
 
   <body>
-<!-- Topbar -->
+ <!-- Topbar -->
     <nav class="navbar navbar-expand-lg navbar-light topbar mb-4 shadow fixed-top">
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,13 +31,27 @@
                 <a class="nav-link" href="">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">Validasi User</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">Rating</a>
+                <a class="nav-link" href="">Customer Service</a>
             </li>
         </ul>
     </div>
+
+        <ul class="navbar-nav">
+        <li class="nav-item dropdown no-arrow">
+            <a class="dropdown-toggle" href="" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rating</a>
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">
+                        Rating Customer
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        Rating CS
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        Rekapitulasi Rating
+                    </a>
+                </div>
+          </li>
+          </ul>
 
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
@@ -66,8 +80,8 @@
         <div class="row" style="margin-top: 100px;">
             <div class="col col-sm-8">
                 <p class="text-justify">
-                    <img src="images/hist.jpg" alt="" style="width: 50px; height: 50px;">
-                    Berikut riwayat komplain customer dengan ID/Nama : #Customer-ID/Nama.
+                    <img src="images/work.png" alt="" style="width: 50px; height: 50px;">
+                    Selamat Datang, SPV-#ID! Berikut tiket yang harus diselesaikan hari ini!
                 </p>
             </div>
             <div class="col col-sm-4">
@@ -80,46 +94,122 @@
     </div>
     <!-- end of content -->
 
+
+    <!-- form -->
     <div class="container mt-3">
-        <div class="row">
-        <div class="col col-sm-1">
-            <p class="text-justify">
-                <img src="images/back.png" alt="" style="width: 50px; height: 50px;">
-            </p>
-        </div>
-        <div class="col col-sm-11">
         <table id="example" class="table table-striped table-bordered text-center bg-white" style="width:100%">
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Waktu dan Tanggal</th>
-                    <th>ID Tiket</th>
-                    <th>CS-ID/Nama</th>
-                    <th>Judul</th>
+                    <th>CS ID</th>
+                    <th>Real Name</th>
+                    <th>Alias Name</th>
+                    <th>E-mail CS</th>
+                    <th>Email</th>
                     <th>Status</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>1.</td>
-                    <td>08-01-2020 07.19</td>
-                    <td>103900</td>
-                    <td>677890/Fildz</td>
-                    <td>ATM Terblokir</td>
-                    <td><button type="button" class="btn btn-success">Closed</button></td>
+                    <td>1</td>
+                    <td>1122</td>
+                    <td>Aldi</td>
+                    <td>MUL</td>
+                    <td>mul@gmail.com</td>
+                    <td>aldi@gmail.com</td>
+                    <td>Active</td>
+                    <td><button type="button" class="btn btn-primary">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1122</td>
+                    <td>Aldi</td>
+                    <td>MUL</td>
+                    <td>mul@gmail.com</td>
+                    <td>aldi@gmail.com</td>
+                    <td>Active</td>
+                    <td><button type="button" class="btn btn-primary">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1122</td>
+                    <td>Aldi</td>
+                    <td>MUL</td>
+                    <td>mul@gmail.com</td>
+                    <td>aldi@gmail.com</td>
+                    <td>Active</td>
+                    <td><button type="button" class="btn btn-primary">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1122</td>
+                    <td>Aldi</td>
+                    <td>MUL</td>
+                    <td>mul@gmail.com</td>
+                    <td>aldi@gmail.com</td>
+                    <td>Active</td>
+                    <td><button type="button" class="btn btn-primary">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1122</td>
+                    <td>Aldi</td>
+                    <td>MUL</td>
+                    <td>mul@gmail.com</td>
+                    <td>aldi@gmail.com</td>
+                    <td>Active</td>
+                    <td><button type="button" class="btn btn-primary">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1122</td>
+                    <td>Aldi</td>
+                    <td>MUL</td>
+                    <td>mul@gmail.com</td>
+                    <td>aldi@gmail.com</td>
+                    <td>Active</td>
+                    <td><button type="button" class="btn btn-primary">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1122</td>
+                    <td>Aldi</td>
+                    <td>MUL</td>
+                    <td>mul@gmail.com</td>
+                    <td>aldi@gmail.com</td>
+                    <td>Active</td>
+                    <td><button type="button" class="btn btn-primary">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1122</td>
+                    <td>Aldi</td>
+                    <td>MUL</td>
+                    <td>mul@gmail.com</td>
+                    <td>aldi@gmail.com</td>
+                    <td>Active</td>
+                    <td><button type="button" class="btn btn-primary">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1122</td>
+                    <td>Aldi</td>
+                    <td>MUL</td>
+                    <td>mul@gmail.com</td>
+                    <td>aldi@gmail.com</td>
+                    <td>Active</td>
+                    <td><button type="button" class="btn btn-primary">Delete</button></td>
                 </tr>
             </tbody>
         </table>
-        </div>
-        </div>
     </div>
-
     <div class="container py-3" style="margin-bottom: 60px;">
         <button type="button" class="btn btn-primary" style="float: right;">Next</button>
     </div>
     <!-- end of form -->
 
-<!-- footer -->
+     <!-- footer -->
     <footer class="page-footer font-small blue bg-dark">
         <!-- Copyright -->
         <div class="footer-copyright text-white text-center py-5">
