@@ -16,9 +16,9 @@
   </head>
   <body>
     <div class="container">
-        <img alt="logo" src="images/logo.png" width="110px" height="90px" style="display: block; margin: auto;"/>
-        <h6 class="text-center ">"Melayani dengan setulus hati"</h6>
-        <form>
+        <form method="post" action="" id="loginForm">
+            <img alt="logo" src="images/logo.png" width="110px" height="90px" style="display: block; margin: auto;"/>
+            <h6 class="text-center ">"Melayani dengan setulus hati"</h6>
             <div class="form-group">
                 <label>E-mail</label>
 
@@ -26,7 +26,7 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text"><i class="fas fa-envelope-square"></i></div>
                     </div>
-                    <input type="text" name="email" class="form-control" placeholder="Masukkan E-mail Anda">
+                    <input type="text" name="email" class="form-control txtuser" id="email" placeholder="Masukkan E-mail Anda">
                 </div>
             </div>
 
@@ -37,7 +37,7 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text"><i class="fas fa-unlock-alt"></i></div>
                     </div>
-                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password Anda">
+                    <input type="password" name="password" class="form-control txtpass" id="password" placeholder="Masukkan Password Anda">
                 </div>
             </div>
 
@@ -47,8 +47,33 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script>
+        $("#loginForm").submit(function(event)
+            {
+                event.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    datatype:"json",
+                    url: "http://184.72.102.143:3000/cs/login",
+                    data:({
+                        email : $('#email').val(),
+                        password: $('#password').val()
+                    }),
+                    success: function(result)
+                    {
+                        if(result.auth){
+                            window.location.href = 'home.html';
+                        }else{
+                            alert('Ndak bisa login');
+                        }
+                    }
+                });
+                return false;
+            })
+    </script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
