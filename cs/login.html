@@ -65,6 +65,7 @@
                     success: function(result)
                     {
                         if(result.auth){
+                            sessionStorage.setItem('MyUniqueUserToken', JSON.stringify(result.token));
                             window.location.href = 'home.html';
                         }else{
                             alert('Tidak bisa login');
