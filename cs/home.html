@@ -131,13 +131,35 @@
         }}).done(function (data) {
             //Response ok. Work with the data returned
             $(data).each(function(i,ticket){
+
+                    switch (ticket.status){
+                        case 1:
+                            _statusMessage = "Submitted"
+                            break;
+                        case 2:
+                            _statusMessage = "In Review"
+                            break;
+                        case 3:
+                            _statusMessage = "On Progress"
+                            break;
+                        case 4:
+                            _statusMessage = "Waiting for Verif"
+                            break;
+                        case 5:
+                            _statusMessage = "Closed"
+                            break;
+                        default:
+                            _statusMessage = "N/A"
+                            break;
+                    }
+
                     $('#tickets').append($("<tr>")
                         .append($("<td>").append(i+1))
                         .append($("<td>").append(ticket.createdAt))
                         .append($("<td>").append(ticket._id))
                         .append($("<td>").append(ticket.title))
                         .append($("<td>").append(ticket.complain_category))
-                        .append($("<td>").append(ticket.status)));
+                        .append($("<td>").append(_statusMessage)));
                 });
         }).fail(function (err)  {
             //Handle errors here
